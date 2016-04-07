@@ -1,0 +1,10 @@
+body {
+	margin: 40px 40px 0 40px;
+	background-color: #4FB0C6;
+}
+img{
+	margin-left: 20px;
+}
+#map { 
+	height: 580px;
+}

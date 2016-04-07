@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
+
+
+  <title>MedTrucks</title>
+
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/leaflet-control-geocoder-1.3.4/Control.Geocoder.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/leaflet-routing-machine-2.6.2/css/leaflet-routing-machine.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+<div class="massive ui vertical menu">
+    <div class="ui dropdown item">
+      Pays
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item color_pays" data-color="#4FB0C6" id="france">France</a>
+        <a class="item color_pays" data-color="#E53A40" id="maroc">Maroc</a>
+        <a class="item color_pays" data-color="#f9c00c" id="senegal">Sénégal</a>
+        <a class="item color_pays" data-color="#FFBC42" id="burki">Burkina Fasso</a>
+        <a class="item color_pays" data-color="#75D701" id="algerie">Algérie</a>
+      </div>
+    </div>
+  </div>
+  <!--menu horizontal-->
+  <div class="ui menu">
+    <img height="80px" alt="logo medtrucks" src="src/rond.png">
+    <div class="right menu">
+      <a class="item">Sign Up</a>
+      <a class="item">Help</a>
+    </div>
+  </div>
+  <!--menu vertical-->
+  <div class="ui grid">
+    <div class="three wide column">
+      <div class="lateral ui vertical menu">
+        <div class="item">
+          <div class="item">
+            Calculer un itinéraire
+          </div>
+          <div class="ui input"><input placeholder="Adresse/Coordonnées" type="text"></div>
+          <div class="menu">
+            <a class="active item">Search</a>
+            <a class="item">Patients</a>
+            <a class="item">MedTrucks</a>
+          </div>
+        </div>
+        <a class="item">
+          <i class="grid layout icon"></i> Evénements
+        </a>
+        <a class="item">
+          Point de desserte
+        </a>
+        <div class="ui dropdown item">
+          Liste Patients
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item"><i class="edit icon"></i> Editer Profile</a>
+            <a href="show.html" class="item"><i class="globe icon"></i> Trouver un patient</a>
+            <a class="item"><i class="settings icon"></i> Liste du jour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="twelve wide column">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/semantic/dist/semantic.min.js"</script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/leaflet/dist/leaflet.js"></script>
+  <script src="bower_components/leaflet-control-geocoder-1.3.4/Control.Geocoder.js"></script>
+  <script src="bower_components/leaflet-routing-machine-2.6.2/dist/leaflet-routing-machine.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
