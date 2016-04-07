@@ -7,7 +7,7 @@
 6 verbose readDependencies loading dependencies from /home/hayate/package.json
 7 error install Couldn't read dependencies
 8 verbose stack Error: ENOENT, open '/home/hayate/package.json'
-9 verbose cwd /home/hayate/Hayatedos/hackaton
+9 verbose cwd /home/hayate/Hayatedos/appliWifiDetect
 10 error Linux 4.2.0-34-generic
 11 error argv "node" "/usr/local/bin/npm" "install"
 12 error node v0.10.25
